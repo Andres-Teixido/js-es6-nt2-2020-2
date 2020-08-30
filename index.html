@@ -1,0 +1,21 @@
+<div id="app"></div>
+
+<div id="parrafo" data-attr="mi_atributo">
+  <span>Hola soy un span</span>
+</div>
+
+
+<button onclick="agregaTarea()">Agrega Tarea</button>
+
+<script>
+
+ function agregaTarea(){
+  const parrafo = document.getElementById('parrafo')
+  console.log(parrafo)
+  
+  parrafo.innerHTML = `<input type="checkbox"> <span>soy una tarea</span>`
+  console.log(parrafo)
+    
+}
+
+</script>
